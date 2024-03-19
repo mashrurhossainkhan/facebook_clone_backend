@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const dotenv = require('dotenv');
+app.use(express.json()); //json data is friendly with JS
 dotenv.config();
 const options = {
   origin: 'http://localhost:3000',
